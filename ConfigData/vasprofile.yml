@@ -15,3 +15,8 @@ vas-profile: Vas profile for North
 spring: 
   profiles: south
 vas-profile: Vas profile for South
+---
+eureka:
+  client:
+    serviceUrl:
+defaultZone: http://localhost:8002/eureka
