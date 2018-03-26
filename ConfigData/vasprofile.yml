@@ -5,8 +5,7 @@ eureka:
       defaultZone: http://localhost:8002/eureka
 ---
 spring:
-  profiles:
-    active: default
+  profiles: default
 vas-profile: Vas profile for default
 ---
 spring: 
