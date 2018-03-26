@@ -1,3 +1,4 @@
+vas-profile: default vas profile
 ---
 spring: 
   profiles: north
