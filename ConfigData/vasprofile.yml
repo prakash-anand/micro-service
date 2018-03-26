@@ -1,1 +1,12 @@
-vas-profile: music, Hello Tune
+---
+spring: 
+  profiles: north
+  application:
+    name: vasprofile
+vas-profile: Vas profile for North
+---
+spring: 
+  profiles: south
+  application:
+    name: vasprofile
+vas-profile: Vas profile for South
