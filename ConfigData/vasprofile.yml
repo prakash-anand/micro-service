@@ -10,12 +10,8 @@ vas-profile: Vas profile for default
 ---
 spring: 
   profiles: north
-  application:
-    name: vasprofile
 vas-profile: Vas profile for North
 ---
 spring: 
   profiles: south
-  application:
-    name: vasprofile
 vas-profile: Vas profile for South
