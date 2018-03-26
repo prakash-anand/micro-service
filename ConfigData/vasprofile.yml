@@ -1,14 +1,11 @@
 ---
-spring:
-  application:
-    name: vasprofile
----
-spring:
-  profiles: 
-    active: default
 server:
   port: ${PORT:${SERVER_PORT:0}}
-vas-profile: Vas profile for default
+---
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 ---
 spring: 
   profiles: north
@@ -17,8 +14,4 @@ vas-profile: Vas profile for North
 spring: 
   profiles: south
 vas-profile: Vas profile for South
----
-eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
