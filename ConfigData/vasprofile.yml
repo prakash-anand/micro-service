@@ -1,4 +1,13 @@
 ---
+spring:
+  profiles:
+    active: default
+  application:
+    name: vasprofile
+server:
+  port: ${PORT:${SERVER_PORT:0}} 
+vas-profile: Vas profile for default
+---
 spring: 
   profiles: north
   application:
