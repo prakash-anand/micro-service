@@ -1,5 +1,9 @@
 ---
 spring:
+  application:
+    name: vasprofile
+---
+spring:
   profiles: 
     active: default
 server:
