@@ -1,3 +1,9 @@
+---
+eureka:
+  client:
+    serviceUrl:
+defaultZone: http://localhost:8002/eureka/
+---
 vas-profile: default vas profile
 ---
 spring: 
