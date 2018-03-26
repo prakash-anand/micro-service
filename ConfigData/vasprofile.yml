@@ -7,8 +7,6 @@ eureka:
 spring:
   profiles:
     active: default
-  application:
-    name: vasprofile
 vas-profile: Vas profile for default
 ---
 spring: 
