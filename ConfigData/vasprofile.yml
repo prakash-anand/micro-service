@@ -1,8 +1,11 @@
 ---
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+---
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8002/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 ---
 vas-profile: default vas profile
 ---
